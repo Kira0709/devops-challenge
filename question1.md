@@ -8,5 +8,6 @@ File: ./transaction-log.txt
 2. The machine is a x86 running Ubuntu 24.04.
 
 Solution:
-Here is the  command.But I usually write a bash shell script instead of a single cli command like this
+Here is the  command.But I usually write a bash shell script instead of a single cli command like this.
+
 jq -r 'select(.symbol=="TSLA" and .side=="sell") | "https://example.com/api/" + .order_id' transaction-log.txt | xargs -I {} curl -s {} >> output.txt
