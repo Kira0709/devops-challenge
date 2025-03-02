@@ -36,4 +36,5 @@ Architectural Components
     + Implement CI/CD pipelines using gitlab-ci & argocd for fast and reliable deployments
       Plans for scaling when the product grows beyond your current setup:
 - use HPA & KEDA for scaling pod/container deployment.
+- use Karpenter  for scaling node in EKS cluster.
 - use autoscaling amazon aurora.
